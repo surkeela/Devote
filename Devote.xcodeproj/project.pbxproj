@@ -17,6 +17,8 @@
 		52A2554C27F4517000178AF3 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52A2554927F4517000178AF3 /* sound-tap.mp3 */; };
 		52A2554D27F4517000178AF3 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52A2554A27F4517000178AF3 /* sound-rise.mp3 */; };
 		52A2555A27F4661200178AF3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2555927F4661200178AF3 /* Constant.swift */; };
+		52CC5C9028297C4800DEB88F /* HidekeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC5C8F28297C4800DEB88F /* HidekeyboardExtension.swift */; };
+		52CC5C94282987B700DEB88F /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC5C93282987B700DEB88F /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		52A2554A27F4517000178AF3 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		52A2555427F4540D00178AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		52A2555927F4661200178AF3 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		52CC5C8F28297C4800DEB88F /* HidekeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidekeyboardExtension.swift; sourceTree = "<group>"; };
+		52CC5C93282987B700DEB88F /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				52A2553727F4505400178AF3 /* ContentView.swift */,
+				52CC5C93282987B700DEB88F /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 		52A2555027F451E500178AF3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				52CC5C8F28297C4800DEB88F /* HidekeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -209,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A2553F27F4505800178AF3 /* Persistence.swift in Sources */,
+				52CC5C94282987B700DEB88F /* BackgroundImageView.swift in Sources */,
 				52A2553827F4505400178AF3 /* ContentView.swift in Sources */,
+				52CC5C9028297C4800DEB88F /* HidekeyboardExtension.swift in Sources */,
 				52A2555A27F4661200178AF3 /* Constant.swift in Sources */,
 				52A2554227F4505800178AF3 /* Devote.xcdatamodeld in Sources */,
 				52A2553627F4505400178AF3 /* DevoteApp.swift in Sources */,
