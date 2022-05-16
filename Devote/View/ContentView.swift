@@ -69,12 +69,15 @@ struct ContentView: View {
                         Button(action: {
                             // TOGGLE APPEARANCE
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
+                            feedback.notificationOccurred(.success)
                         }, label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
                                 .frame(width: 24, height: 24)
                                 .font(.system(.title, design: .rounded))
                         })
+                        
                     } // HSTACK
                     .padding()
                     .foregroundColor(.white)
@@ -85,6 +88,8 @@ struct ContentView: View {
                     
                     Button(action: {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: "mp3")
+                        feedback.notificationOccurred(.success)
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -123,11 +128,11 @@ struct ContentView: View {
                     BlankView(
                         backgroundColor: isDarkMode ? Color.black : Color.gray,
                         backgroundOpacity: isDarkMode ? 0.3 : 0.5)
-                        .onTapGesture {
-                            withAnimation() {
-                                showNewTaskItem = false
-                            }
+                    .onTapGesture {
+                        withAnimation() {
+                            showNewTaskItem = false
                         }
+                    }
                     
                     NewTaskItemView(isShowing: $showNewTaskItem)
                 }
